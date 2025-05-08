@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #003049;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fcd34d;
+    color: #003049;
+}
+
+/* Turlar bölümü */
+.turlar {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.turlar h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.tur-listesi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tur-karti {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.tur-karti img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tur-karti h2 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.tur-karti p {
+    padding: 0 15px 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+.tur-karti:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tur-listesi {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güvenli Ödeme | Efe Turizm</title>
+    <link rel="stylesheet" href="odeme.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Efe Turizm</div>
+        <nav>
+            <ul>
+                <li><a href="Anasayfa.html">Anasayfa</a></li>
+                <li><a href="rezervasyon.html">Rezervasyon</a></li>
+                <li><a href="odeme.html" class="active">Ödeme</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="odeme-formu">
+        <h2>Güvenli Ödeme</h2>
+        <form>
+            <label>Ad Soyad</label>
+            <input type="text" placeholder="Kart sahibi adı" required>
+
+            <label>Kart Numarası</label>
+            <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" required>
+
+            <label>Son Kullanma Tarihi</label>
+            <input type="text" placeholder="AA/YY" maxlength="5" required>
+
+            <label>CVC</label>
+            <input type="text" maxlength="3" placeholder="123" required>
+
+            <label>Tutar</label>
+            <input type="text" value="₺1499.00" readonly>
+
+            <button type="submit">Ödemeyi Tamamla</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Efe Turizm | Güvenli Ödeme Sistemi</p>
+    </footer>
+</body>
+</html>
